@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-const { promisify } = require('util')
-
 const program = require('commander')
 const Nedb = require('nedb')
 const { MongoClient } = require('mongodb')
