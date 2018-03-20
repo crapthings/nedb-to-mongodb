@@ -7,6 +7,9 @@ If you've outgrown <a href="https://github.com/louischatriot/nedb" target="_blan
 
 Please follow <a href="https://github.com/louischatriot/nedb#bug-reporting-guidelines">the NeDB bug reporting guidelines</a> if you submit an issue.
 
+### !!!
+this is the original nedb to mongodb with latest mongodb driver support and use batch insert
+
 ### Installation
 ```bash
 git clone git@github.com:louischatriot/nedb-to-mongodb.git
@@ -15,7 +18,7 @@ npm install
 ```
 
 ### Usage
-Usage is pretty straightforward. All the information you need is one `./transfer.js --help` away. Here is what this command tells you:  
+Usage is pretty straightforward. All the information you need is one `./transfer.js --help` away. Here is what this command tells you:
 
     Usage: ./transfer.js [options]
 
@@ -30,8 +33,9 @@ Usage is pretty straightforward. All the information you need is one `./transfer
     -n --nedb-datafile [path]       Path to the NeDB data file
     -k --keep-ids [true/false]      Whether to keep ids used by NeDB or have MongoDB generate ObjectIds
                                     (probably a good idea to use ObjectIds from now on!)
+    -f --force-clean                Clean collection before insert
 
-### License 
+### License
 
 (The MIT License)
 
